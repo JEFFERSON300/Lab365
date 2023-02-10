@@ -50,6 +50,7 @@ console.log(students);
 let totalMathematics = 0;
 
 totalMathematics = students[0].mathematics + students[1].mathematics + students[2].mathematics + students[3].mathematics + students[4].mathematics;
+
 console.log(`A média da turma é ${totalMathematics/5}`);
 
 if (students[0].mathematics>5){
