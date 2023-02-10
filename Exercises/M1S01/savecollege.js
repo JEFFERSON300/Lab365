@@ -45,20 +45,44 @@ const students = [
     },
   ];
 
-  console.log(students);
+console.log(students);
 
-  let totalMathematics = 0;
+let totalMathematics = 0;
 
-  totalMathematics = students[0].mathematics + students[1].mathematics + students[2].mathematics + students[3].mathematics + students[4].mathematics;
-  console.log(`A média da turma é ${totalMathematics/5}`);
+totalMathematics = students[0].mathematics + students[1].mathematics + students[2].mathematics + students[3].mathematics + students[4].mathematics;
+console.log(`A média da turma é ${totalMathematics/5}`);
 
-students.forEach(element => {
-  if (element.mathematics>5){
-    console.log(`O aluno ${element.name} foi aprovado`)
-  }
-  else{
-    console.log(`O aluno ${element.name} foi reprovado`)
-  }
-  
-});
+if (students[0].mathematics>5){
+  console.log(`O aluno ${students[0].name} foi aprovado`)
+}
+else{
+  console.log(`O aluno ${students[0].name} foi reprovado`)
+};
 
+if (students[1].mathematics>5){
+  console.log(`O aluno ${students[1].name} foi aprovado`)
+}
+else{
+  console.log(`O aluno ${students[1].name} foi reprovado`)
+};
+
+if (students[2].mathematics>5){
+  console.log(`O aluno ${students[2].name} foi aprovado`)
+}
+else{
+  console.log(`O aluno ${students[2].name} foi reprovado`)
+};
+
+if (students[3].mathematics>5){
+  console.log(`O aluno ${students[3].name} foi aprovado`)
+}
+else{
+  console.log(`O aluno ${students[3].name} foi reprovado`)
+};
+
+if (students[4].mathematics>5){
+  console.log(`O aluno ${students[4].name} foi aprovado`)
+}
+else{
+  console.log(`O aluno ${students[4].name} foi reprovado`)
+};
