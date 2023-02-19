@@ -1,5 +1,4 @@
-let data = [
-  {
+[{
   "name": "Scenic Stream",
   "username": "Eladio66",
   "rating": 0.9,
@@ -89,11 +88,4 @@ let data = [
   "coords": "-74.4389 146.7820"
 }
 
-];
-
-let userNames = data.map((element) => { return element.username } );
-console.log(userNames);
-
-let search = prompt("Digite o nome do usuário que deseja procurar.");
-let result = data.filter((element) => element.username === 'Jason.Kautzer80');
-console.log(result);
+]
