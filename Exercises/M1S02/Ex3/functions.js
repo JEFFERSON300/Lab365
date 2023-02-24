@@ -6,9 +6,6 @@ document.getElementById("dataForm").addEventListener("submit", (e) => {
 
   if (dataUser.login == inputLogin && dataUser.password == inputPassword) {
     console.log("Logado");
-
-    localStorage.setItem("login", String(inputLogin));
-    localStorage.setItem("password", String(inputPassword));
   } else if (inputLogin == "" || inputPassword == "") {
     console.log("Algum dos campos está vazio");
   } else {
