@@ -1,5 +1,3 @@
-import { create, all } from 'mathjs'
-
 var itens = [];
 var quant = [];
 var total = 0;
@@ -21,11 +19,9 @@ class CaixaRegistradora {
   }
 
   novoCliente(nomeCliente) {
-    
     if (localStorage.getItem("name") != nomeCliente) {
       localStorage.setItem("name", nomeCliente);
-    } 
-    
+    }
   }
 
   registrarProdutoCliente(codigoBarra, quantidade) {
@@ -38,7 +34,10 @@ class CaixaRegistradora {
   }
 
   verificarValorTotal() {
-    total = math.dot(itens,quant);
+    for (let i = 0; i < itens.length; i++) {
+      total += itens[i] * quant[i];
+    }
+
     console.log(total);
   }
 
@@ -49,7 +48,6 @@ class CaixaRegistradora {
     quant = [];
     total = 0;
   }
-
 }
 
 let NovaCaixa = new CaixaRegistradora();
@@ -61,4 +59,3 @@ NovaCaixa.registrarProdutoCliente(122349, 2);
 NovaCaixa.registrarProdutoCliente(12348, 5);
 NovaCaixa.verificarValorTotal();
 NovaCaixa.fecharConta(200);
-
