@@ -34,9 +34,5 @@ const Test = sequelize.define("teste", {
   },
 });
 
-async function addTable(name, age) {
-  await Test.create({ name: name, age: age });
-}
-
-addTable("Jefferson", 33);
-addTable("Maria", 50);
+await Test.create({ name: "Jefferson", age: 33 });
+await Test.create({ name: "Maria", age: 50 });
