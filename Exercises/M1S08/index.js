@@ -34,5 +34,8 @@ const Test = sequelize.define("teste", {
   },
 });
 
-await Test.create({ name: "Jefferson", age: 33 });
-await Test.create({ name: "Maria", age: 50 });
+(async () => {
+  await sequelize.sync({ force: true });
+  await Test.create({ name: "Jefferson", age: 33 });
+  await Test.create({ name: "Maria", age: 50 });
+})();
