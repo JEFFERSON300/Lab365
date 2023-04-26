@@ -1,8 +1,10 @@
 const express = require("express");
+const authMiddle = require("./authmiddle");
 const router = express.Router();
 router.use(express.json());
 
-router.post("/user", (req, res) => {
+
+router.post("/user", authMiddle, (req, res) => {
   try {
     const newUser = {
       name: req.body.name,
