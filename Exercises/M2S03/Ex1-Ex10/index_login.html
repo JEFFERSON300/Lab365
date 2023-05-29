@@ -18,28 +18,38 @@
     <title>Tela_login</title>
   </head>
   <body>
-    <h2>Sign In</h2>
-    <div id="p1">Insira suas credenciais para acessar sua conta</div>
+    <div id="screen">
+      <h2>Sign In</h2>
+      <div id="p1">Insira suas credenciais para acessar sua conta</div>
 
-    <form id="formLogin">
-      <input type="text" id="email" placeholder="Informe seu e-mail" required />
-      <input
-        type="password"
-        id="pwd"
-        placeholder="Informe sua senha"
-        required
-      />
-      <button type="submit">Entrar</button>
-    </form>
+      <form id="formLogin">
+        <input
+          type="text"
+          id="email"
+          placeholder="Informe seu e-mail"
+          required
+        />
+        <input
+          type="password"
+          id="pwd"
+          placeholder="Informe sua senha"
+          required
+        />
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+    <div id="bottom-screen">
+      <div class="text">
+        Esqueceu sua senha?<a id="link1" href="#">Redefinir senha</a>
+      </div>
 
-    <div class="text">
-      Esqueceu sua senha?<a id="link1" href="#">Redefinir senha</a>
+      <div class="text">
+        Ainda não tem uma conta?<a id="link2" href="./index_cadastro.html"
+          >Cadastre-se</a
+        >
+      </div>
     </div>
-    <div class="text">
-      Ainda não tem uma conta?<a id="link2" href="./index_cadastro.html"
-        >Cadastre-se</a
-      >
-    </div>
+
     <script src="/assets/scripts/main_login.js"></script>
   </body>
 </html>
