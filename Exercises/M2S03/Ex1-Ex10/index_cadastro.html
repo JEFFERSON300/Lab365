@@ -22,26 +22,23 @@
       <h2>Sign Up</h2>
       <div id="p1">Insira seus dados para criar uma conta</div>
 
-      <form id="formLogin" action="">
-        <input type="text" id="empresa" placeholder="Empresa" />
-        <input type="text" id="cnpj" placeholder="CNPJ" />
-        <input type="text" id="resp" placeholder="Responsável" />
+      <form id="formLogin" role="Cadastro">
+        <input type="text" id="empresa" placeholder="Empresa" required/>
+        <input type="text" id="cnpj" placeholder="CNPJ" required/>
+        <input type="text" id="resp" placeholder="Responsável" required/>
         <div id="subFormLogin">
-          <input type="text" id="email" placeholder="E-mail" />
-          <input type="text" id="tel" placeholder="Telefone" />
-          <input type="password" id="pwd" placeholder="Senha" />
-          <input type="password" id="pwd_" placeholder="Confirmar Senha" />
+          <input type="text" id="email" placeholder="E-mail" required/>
+          <input type="text" id="tel" placeholder="Telefone" required/>
+          <input type="password" id="pwd" placeholder="Senha" required/>
+          <input type="password" id="pwd_" placeholder="Confirmar Senha" required/>
         </div>
-        <button>Entrar</button>
+        <button type="submit" >Entrar</button>
       </form>
     </div>
     <div id="bottom-screen">
       <div class="text">
-        Já possui uma conta?<a id="link1" href="./index_login.html"
-          >Realizar login</a
-        >
+        Já possui uma conta?<a id="link1" href="./index_login.html">Realizar login</a>
       </div>
     </div>
-    <script src="/assets/scripts/main_cadastro.js"></script>
   </body>
 </html>
