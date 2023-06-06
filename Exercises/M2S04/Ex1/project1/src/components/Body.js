@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import "../styles/Body.css";
 
 function Body() {
   return (
@@ -17,7 +18,7 @@ function Body() {
         of Lorem Ipsum.
       </div>
 
-      <Button name="Aperte" />
+      <Button name={"Aperte"} />
     </div>
   );
 }
