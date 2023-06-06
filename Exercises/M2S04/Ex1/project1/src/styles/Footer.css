@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+#footer {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 10px;
+}
+
+li {
+  margin-left: 0px;
+}
+
+ul {
+  padding-left: 0;
+}
