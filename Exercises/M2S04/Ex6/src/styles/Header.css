@@ -1,0 +1,38 @@
+.Header {
+  color: #222;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  width: 250px;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+
+.Menu li {
+  list-style-type: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: #222;
+}
+
+#menu {
+  width: 30px;
+}
+
+#profile {
+  width: 40px;
+}
