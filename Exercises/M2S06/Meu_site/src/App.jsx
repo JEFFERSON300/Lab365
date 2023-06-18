@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import Products from "./components/Products/Products";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const menu = [
@@ -45,6 +46,7 @@ function App() {
       <Header menu={menu} />
       <Banner />
       <Products allProducts={products} />
+      <Footer />
     </div>
   );
 }
