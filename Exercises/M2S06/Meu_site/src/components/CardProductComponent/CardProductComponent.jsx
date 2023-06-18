@@ -41,7 +41,7 @@ function CardProductComponent(props) {
   };
 
   return (
-    <div className="card mb-3 bg-white d-flex flex-wrap ms-5 me-5 mt-5">
+    <div className="card mb-3 bg-white d-flex flex-wrap m-5 me-5 mt-5 mb-5">
       <div className="row g-0">
         <div className="col-md-4">
           <img
