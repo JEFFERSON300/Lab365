@@ -5,7 +5,7 @@ function Header(props) {
   const menuItem = (item) => {
     return (
       <li className="nav-item">
-        <a className="nav-link active text-light fw-bold me-3 fs-6">
+        <a href="#" className="nav-link active text-light fw-bold me-3 fs-6">
           {item.label}
         </a>
       </li>

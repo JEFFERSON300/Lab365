@@ -22,14 +22,14 @@ function Footer() {
           <div className="fs-6 ">Santa Catarina - SC</div>
           <hr></hr>
           <div className="">
-            <a href="#">
-              <img src={InstagramIcon} alt="a" className="pe-3" />
+            <a href="#" className="pe-3">
+              <InstagramIcon sx={{ color: "white", fontSize: 30 }} />
+            </a>
+            <a href="#" className="pe-3">
+              <FacebookIcon sx={{ color: "white", fontSize: 30 }} />
             </a>
             <a href="#">
-              <img src={FacebookIcon} alt="b" className="pe-3" />
-            </a>
-            <a href="#">
-              <img src={YouTubeIcon} alt="a" className="pe-3" />
+              <YouTubeIcon sx={{ color: "white", fontSize: 30 }} />
             </a>
           </div>
         </div>

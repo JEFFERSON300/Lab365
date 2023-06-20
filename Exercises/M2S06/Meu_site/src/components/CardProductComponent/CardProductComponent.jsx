@@ -1,4 +1,5 @@
 import "./CardProductComponent.css";
+("../../images");
 
 import PropTypes from "prop-types";
 
@@ -45,7 +46,7 @@ function CardProductComponent(props) {
       <div className="row g-0">
         <div className="col-md-4">
           <img
-            src={`../../assets/images/${props.productItem.imagePath}`}
+            src={`../../images/${props.productItem.imagePath}`}
             className="rounded-start img-fluid"
             alt="..."
           />
