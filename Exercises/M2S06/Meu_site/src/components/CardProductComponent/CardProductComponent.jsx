@@ -1,10 +1,13 @@
 import "./CardProductComponent.css";
-("../../images");
-
 import PropTypes from "prop-types";
 
 function CardProductComponent(props) {
-  /*const BASEPATH = "../../assets/images/FILE";*/
+  
+  const getImage = (name) => {
+    const BASEPATH = "./images/NAME_IMAGE";
+    return (BASEPATH.replace("NAME_IMAGE",name));
+  };
+
   const characterItem = (item) => {
     return (
       <li className="card-text">
@@ -46,7 +49,7 @@ function CardProductComponent(props) {
       <div className="row g-0">
         <div className="col-md-4">
           <img
-            src={`../../images/${props.productItem.imagePath}`}
+            src={getImage(props.productItem.imagePath)}
             className="rounded-start img-fluid"
             alt="..."
           />
